@@ -151,12 +151,12 @@ DeviceNetworkEvents
 
 ## Summary
 
-The user "employee" on the "threat-hunt-lab" device initiated and completed the installation of the TOR browser. They proceeded to launch the browser, establish connections within the TOR network, and created various files related to TOR on their desktop, including a file named `tor-shopping-list.txt`. This sequence of activities indicates that the user actively installed, configured, and used the TOR browser, likely for anonymous browsing purposes, with possible documentation in the form of the "shopping list" file.
+User labuser710, on device threat-hunt-lab, downloaded and silently installed the portable version of Tor Browser (tor-browser-windows-x86_64-portable-15.0.1 (1).exe) from the Downloads folder. Shortly thereafter, the Tor Browser executable (tor.exe) was launched, and an outbound connection was established to a remote IP address (149.202.79.129) in France on port 9001—a port commonly used by Tor network nodes. Within the same session, numerous “tor-” prefixed files were copied to the Desktop and a file named tor-shopping-list.txt was created. The use of /S for silent install, the direct outbound connection to a known hosting provider’s IP, the file copying, and the creation of a desktop file all combine to show a pattern of covert or bulk usage of Tor Browser, outside of typical benign user behavior.
 
 ---
 
 ## Response Taken
 
-TOR usage was confirmed on the endpoint `threat-hunt-lab` by the user `employee`. The device was isolated, and the user's direct manager was notified.
+TOR usage was confirmed on endpoint threat-hunt-lab. The device was isolated and the user's direct manager was notified.
 
 ---
